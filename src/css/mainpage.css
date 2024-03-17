@@ -1,0 +1,227 @@
+@font-face {
+    font-family: Gravity-Light;
+    src: url("../Fonts/Gravity-Light.otf");
+}
+
+.anchor{
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.about{
+    margin-top: 0px;
+    border: black;
+    border-radius: 10px;
+    padding-left: 16%;
+    padding-top: 10%;
+    padding-bottom: 22%;
+    background-color: black;
+    position: relative;
+}
+
+.aboutTitle{
+    padding-top: 40px;
+    padding-left: 6.7%;
+    font-family: "Gravity-Light", sans-serif;
+    font-size: 32px;
+    color: #d0e0db;
+}
+
+.aboutText {
+    padding: 10px 400px 50px 100px;
+    color: #d0e0db;
+    font-family: "Gravity-Light", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.contactContainer{
+    color: #d0e0db;
+    padding-bottom: 30px;
+    padding-top: 350px;
+}
+
+.contact{
+    width: 68%;
+    margin-left: 16%;
+}
+
+.pageTitle{
+    font-family: "Gravity-Light", sans-serif;
+    margin-right: 20px;
+    font-weight: 800;
+    width: auto;
+    color: black;
+    font-size: 46px;
+}
+
+.label{
+    font-family: "Gravity-Light", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: black;
+}
+
+.input{
+    font-family: "Gravity-Light", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: slategray;
+}
+
+.inputMessage{
+    font-family: "Gravity-Light", sans-serif;
+    font-size: 14px;
+    height: 100px;
+    font-weight: 800;
+    color: slategray;
+}
+
+.inputMessage::placeholder{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.skillsList{
+    background-color: black;
+    color: #d0e0db;
+    font-family: "Gravity-Light", sans-serif;
+    padding: 50px 400px 50px 100px;
+    list-style-type: circle;
+    font-size: 16px;
+}
+
+.skillsTitle{
+    padding-top: 40px;
+    font-family: "Gravity-Light", sans-serif;
+    font-size: 32px;
+    color: #d0e0db;
+}
+
+.languageList{
+    background-color: black;
+    color: #d0e0db;
+    font-family: "Gravity-Light", sans-serif;
+    padding: 10px 100px 100px 150px;
+    font-size: 16px;
+    list-style-type: circle;
+}
+
+.languagesTitle{
+    padding-top: 40px;
+    font-family: "Gravity-Light", sans-serif;
+    font-size: 32px;
+    color: #d0e0db;
+}
+
+.skillsDiv{
+    float: left;
+}
+
+.languageDiv{
+    float: left;
+}
+
+.langSkillsDiv{
+    margin-left: 12%;
+}
+
+.aboutMe{
+    margin-left: 5%;
+}
+input[type=text], input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 9px;
+}
+
+input[type=submit]{
+    background-color: gray;
+    border: black;
+    color: #d0e0db;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+h1{
+    font-family: "Gravity-Light", sans-serif;
+    font-weight: 800;
+    width: auto;
+    color: black;
+    font-size: 46px;
+    margin-bottom: 0;
+}
+
+h2{
+    font-family: "Gravity-Light", sans-serif;
+    font-weight: 800;
+    width: auto;
+    color: #d0e0db;
+    font-size: 46px;
+    margin-bottom: 0;
+}
+
+.portfolio{
+    padding-left: 16%;
+    padding-right: 200px;
+    padding-bottom: 30px;
+}
+
+.content{
+    padding-top: 20px;
+    margin-left: 16%;
+}
+
+.contentHolder{
+    background: black;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: 10px;
+    float: left;
+}
+
+.contentBottomTag{
+    color: #d0e0db;
+    font-family: "Gravity-Light", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+}
+
+.imageContainer{
+    padding-left: 8%;
+}
+
+.image{
+    height: auto;
+    width: 250px;
+    text-align: center;
+    display: block;
+}
+
+.buttons{
+    position: fixed;
+    width: 100%;
+    left: 55%;
+    transform: translate(-50%);
+    padding: 8px;
+    height: 5%;
+}
+

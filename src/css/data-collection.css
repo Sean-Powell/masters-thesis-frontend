@@ -1,0 +1,63 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-text {
+    color: white;
+    font-size: 24px;
+  }
+
+  .controlButtons {
+    width: 35%;
+    height: 6%;
+    position: absolute;
+    top: 92%;
+    transform: translateX(100%);
+  }
+
+  .nextImageButton{
+    width: 10%;
+    height: 5%;
+    position: relative;
+    top: 45%;
+    left: 41%;
+  }
+
+  .imageContainer{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .imageContainer img{
+    width: fit-content;
+    height: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .dataCentered {
+    position: fixed;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.container{
+  overflow: hidden;
+  width: 90%;
+  height: 80%;
+}

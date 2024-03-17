@@ -1,0 +1,30 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <script src="../js/login.js" defer></script>
+        <link rel="stylesheet" href="../css/global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+    <body>
+        <div style="width: 80%; margin-left: 10%;">
+            <h2>Login</h2>
+            <div id="loginForm" class="login">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <div class="buttons" style="margin-left: 10%;">
+                    <button id="submit" style="font-size: 24; min-width: 100; max-height: 45; max-width: 300;">Sign In</button>
+                    <a href="../pages/create.html"><button style="font-size: 24; min-width: 250; max-height: 45;  max-width: 300;">Create an account</button></a> 
+                    <button id="forgot-password" style="font-size: 24; min-width: 250; max-height: 45; max-width: 300; ">Forgot Password</button>
+                </div><br><br>
+                <p id="incorrect-password-message" style="visibility: hidden; color: rgb(212, 21, 21); font-size: 30px; font-family: 'Poppins';">Incorrect Username or Password! Please try again</p>
+                <p id="newUserCreated" style="visibility: hidden; color: black; font-size: 30px; font-family: 'Poppins';">An email has been sent to your inbox with a tempoary password</p>
+                <p id="loginAgain" style="visibility: hidden; color: black; font-size: 30px; font-family: 'Poppins';">Session has expired, please login again</p>
+            </div>
+        </div>
+</html>

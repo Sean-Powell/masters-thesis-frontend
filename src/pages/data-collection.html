@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sean-Powell</title>
+        <script src="../js/data-collection.js" defer></script>
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/data-collection.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <p style="margin-left: 15%; color: white;">This data collection works by you tracking where you are looking via your mouse cursor position. Please follow where you are currently looking with your mouse cursor</p><br>
+        <div>
+            <div id="container" class="container dataCentered">
+
+                <div id="image" class="imageContainer"></div>
+                <div id="nextImageOverlay" class="dataCentered imageContainer">
+                    <button id="nextImage" class="nextImageButton" style="min-width: 250; min-height: 40; font-size: 24px;">Next Image</button>
+                </div>
+            </div>
+
+            <br><br> 
+            
+            <div>
+                <p style="color: white;" id="imagesLeft"></p>
+            </div>
+            <div class="controlButtons">
+                <button id="pauseButton" style="min-width: 200; min-height: 35; font-size: 24px;">Pause</button>
+                <Button id="logoutButton" style="min-width: 200; min-height: 35; font-size: 24px;">Logout</Button>
+            </div>
+
+            <!-- TODO add counter for current image out of total -->
+    </div>
+    </body>
+</html>

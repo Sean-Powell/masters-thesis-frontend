@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Sean-Powell</title>
+        <script src="../js/survey.js" defer></script>
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/survey.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <label for="gender">1. What is your gender?</label><br>
+            <select id="gender" name="gender" class="selector" style="min-height: 27; min-width: 200;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="preferNotToSay">Prefer Not to Say</option>
+            </select><br><br>
+
+            <label for="age">2 What is your age?</label><br>
+            <input type="number" id="age" name="age" min="18" max="150" class="ageInput" style="min-height: 27; min-width: 150;"><br><br>
+
+            <label for="doYouHaveVisualImpairment">3. Do you have a visual impairment such as colour blindness or some visual issue even if corrected by glasses?</label><br>
+            <select id="doYouHaveVisualImpairment" class="selector" style="min-height: 27; min-width: 200;">
+                <option disabled selected value> -- select an option -- </option>
+                <option id="yes">Yes</option>
+                <option id="no">No</option>
+            </select><br><br>
+
+            <label for="doYouHaveVisualImpairment">4. If you answered yes to 3, please select the relevant affliction below.</label><br>
+            <div id="visual-impairment-questions" style="visibility: visible;">
+                <div class="visualImpairments">
+                    <fieldset>
+                    <div class="inline-field">
+                        <input type="checkbox" id="nearsighted" name="nearsighted">
+                        <label for="nearsighted">Nearsighted</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="farsighted" name="farsighted">
+                        <label for="farsighted">Farsighted</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="presbyopia" name="presbyopia">
+                        <label for="presbyopia">Presbyopia</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="astigmatism" name="astigmatism">
+                        <label for="astigmatism">Astigmatism</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="diabeticRetino" name="diabeticRetino">
+                        <label for="diabeticRetino">Diabetic Retinopathy</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="AMD" name="AMD">
+                        <label for="AMD">Age-Related Macular Degeneration</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="glaucoma" name="glaucoma">
+                        <label for="glaucoma">Glaucoma</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="cataract" name="cataract">
+                        <label for="cataract">Cataract</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="colourBlindness" name="colourBlindness">
+                        <label for="colourBlindness">Colour Blindness</label>
+                    </div>
+                    <div class="inline-field">
+                        <input type="checkbox" id="other" name="other" onchange="otherClicked()">
+                        <label for="other">Other</label><br>
+                        <input type="text" id="otherText" name="otherText" style="visibility: hidden;">
+                    </div>
+                </fieldset>
+                </div>
+            </div><br>
+
+            <button id="submit" class="submitButton" style="min-width: 150; min-height: 45; font-size: 24;" >Submit</button>
+        </div>
+    </body>
+</html>

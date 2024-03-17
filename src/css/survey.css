@@ -1,0 +1,69 @@
+.container{
+    width: 90%;
+    height: 95%;
+}
+
+select{
+    border-radius: 8px;
+    width: 20%;
+    min-height: 20px;
+    height: 4%;
+    background-color: rgb(148, 147, 147);
+}
+
+select:focus > option:focus{
+    background-color: darkslategrey;
+}
+
+.ageInput{
+    width: 10%;
+    height: 3%;
+    min-height: 15px;
+    margin-left: 0;
+}
+
+.submitButton{
+    width: 25%;
+    height: 3%;
+    min-height: 40px;
+}
+
+.visualImpairments{
+    width: 100%;
+}
+
+.inline-field{
+  /* display: inline-block;
+  margin-bottom: 0; /* I added this after I posted my reply 
+  vertical-align: middle; Fixes any weird issues in Firefox and IE */
+  display:grid;
+  grid-template-columns: max-content max-content;
+  grid-gap:5px;
+}
+
+.inline-field.label{
+    text-align:right;
+}
+
+.colourBlindnessContainer{
+    visibility: visible;
+}
+
+.crossEyedContainer{
+    visibility: visible;
+}
+
+.lazyEyeContainer{
+    visibility: visible;
+}
+
+.selector option:hover{
+    background-color: rgb(211, 144, 20);
+}
+
+.selector:focus{
+    outline: none !important;
+    border: 1px solid grey;
+    box-shadow: 0 0 1px grey;
+}
+
