@@ -68,7 +68,6 @@ function getNextImageData(){
                 }
             })
         }catch(error){
-            //TODO not catching 401 error correctly
             console.log(JSON.stringify(error));
             console.error("Something went wrong when getting the image | " + error);
             reject("Unable to get next image"); 
@@ -96,7 +95,6 @@ function displayImage(imageData){
 
 function getMouseData(trackTime=5000){
     return new Promise((resolve, reject) => {
-        console.log("starting getting mouse data");
         let mousePositions = [];
         var imageBoundingRect = document.getElementById('image-container').getBoundingClientRect();
 
@@ -108,7 +106,6 @@ function getMouseData(trackTime=5000){
         document.getElementById('image-container').addEventListener('mousemove', handleMouseMove);
         setTimeout(function() {
             document.getElementById('image-container').removeEventListener('mousemove', handleMouseMove);
-            console.log("finished getting mouse data");
 
             const data = {
                 startTime,
@@ -135,12 +132,10 @@ function displayOverlay(text, overlayTime=1000) {
         overlay.appendChild(overlayText);
     
         document.getElementById('container').appendChild(overlay);
-        console.log('showing overlay');
         setTimeout(function() {
             document.getElementById('image-container').style.visibility = 'visible';
             overlay.style.visibility = 'hidden';
             document.getElementById('container').removeChild(document.getElementById('overlay'));
-            console.log('finished display overlay');
             resolve();
         }, overlayTime);
     });
@@ -161,7 +156,6 @@ function submitMouseData(mouseData){
         };
     
         if(paused){
-            console.log('Paused did not return data!')
             return;
         }
     
@@ -202,7 +196,6 @@ async function pause(){
         document.getElementById('pauseButton').style.display = 'none';
         nextImageOverlay('visible');
     }
-    console.log('Pause is now: ' + paused);
 }
 
 async function logout(){

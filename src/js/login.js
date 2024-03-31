@@ -6,16 +6,13 @@ document.getElementById("forgot-password").addEventListener("click", changePassw
 
 
 window.onload = function(){
-    console.log("test");
     var urlParams = new URLSearchParams(window.location.search);
     var emailSent = urlParams.get('emailSent');
     var loginAgain = urlParams.get('loginAgain')
 
     if(loginAgain == "true"){
-        console.log("true");
         document.getElementById('loginAgain').style.visibility = 'visible'
     }else{
-        console.log("false");
         document.getElementById('loginAgain').style.visibility = 'hidden'
     }
 
@@ -125,12 +122,9 @@ async function getUserInfo(uuid, recursion=false){
             if(statusCode == 200){
                 resovle(text);
             }else{
-                //TODO handle expired token
-                console.log('status code: ' + statusCode + ' text: ' + text);
                 if(recursion === false){
                     resovle(await getUserInfo(uuid, true));
                 }else{
-                    console.log('unable to get user info');
                     resovle(undefined);
                 }
             }
